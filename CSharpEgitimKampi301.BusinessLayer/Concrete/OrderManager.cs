@@ -20,27 +20,27 @@ namespace CSharpEgitimKampi301.BusinessLayer.Concrete
 
         public void TDelete(Order entity)
         {
-            throw new NotImplementedException();
+            _orderDal.Delete(entity);
         }
 
         public List<Order> TGetAll()
         {
-            throw new NotImplementedException();
+            return _orderDal.GetAll();
         }
 
         public Order TGetById(int id)
         {
-            throw new NotImplementedException();
+            return _orderDal.GetById(id);
         }
 
         public void TInsert(Order entity)
         {
-            throw new NotImplementedException();
+            _orderDal.Insert(entity);
         }
 
         public void TUpdate(Order entity)
         {
-            throw new NotImplementedException();
+            _orderDal.Update(entity);
         }
     }
 }
